@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(115, 0, 255);
+}
+img {
+    display: block;
+    margin: auto;
+    margin-top: 40vh;
+    width: 100px;
+    transition: scale 0.3s;
+    cursor: crosshair;
+}
+img:hover {
+    scale: 1.5;
+}
