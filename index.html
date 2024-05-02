@@ -95,18 +95,18 @@
                 ctx.fillRect(0, 0, c.width, c.height);
                 ctx.fillStyle = "#0F0";
                 ctx.font = font_size + "px arial";
-                for( var i = 0; i < drops.length; i++ )
+                for(var i = 0; i < drops.length; i++)
                 {
-                    var text = matrix[ Math.floor( Math.random() * matrix.length ) ];
+                    var text = matrix[Math.floor(Math.random() * matrix.length)];
                     ctx.fillText(text, i * font_size, drops[i] * font_size);
                     
-                    if( drops[i] * font_size > c.height && Math.random() > 0.975 )
+                    if(drops[i] * font_size > c.height && Math.random() > 0.975)
                     drops[i] = 0;
                     
                     drops[i]++;
                 }
             }
-            setInterval( draw, 35 );
+            setInterval(draw, 35);
         </script>
     </body>
 </html>
