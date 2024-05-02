@@ -83,10 +83,11 @@
             const c = document.getElementById("c");
             const ctx = c.getContext("2d");
 
-            (function resize(){
+            let resize = _ => {
 		c.height = window.innerHeight;
                 c.width = window.innerWidth;
-	    })();
+	    }
+	    resize();
 	    window.onresize = resize;
 		
             let matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
