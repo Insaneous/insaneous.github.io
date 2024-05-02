@@ -83,9 +83,6 @@
             var c = document.getElementById("c");
             var ctx = c.getContext("2d");
             
-            c.height = window.innerHeight;
-            c.width = window.innerWidth;
-            
             var matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
             matrix = matrix.split("");
             
@@ -96,6 +93,8 @@
                 drops[x] = 1; 
             
             function draw(){
+		c.height = window.innerHeight;
+                c.width = window.innerWidth;
                 ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
                 ctx.fillRect(0, 0, c.width, c.height);
                 ctx.fillStyle = "#0F0";
